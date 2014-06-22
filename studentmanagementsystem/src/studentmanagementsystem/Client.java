@@ -1,12 +1,12 @@
 package studentmanagementsystem;
 
-public class client
+public class Client
 {
    public static void main(String[] args){
-       student s = new student("sasa","adad","ddd");
+       Student s = new Student("SATWIK","FREMONT","MSCS");
        s.printDetails();
        
-      // master m = new master("sasa");
+       Master m = new Master("SATWIK","FREMONT","MSCS","MASTERS");
       
        //System.out.println(s.toString());
    }

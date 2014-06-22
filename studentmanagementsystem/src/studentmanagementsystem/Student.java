@@ -1,12 +1,12 @@
 package studentmanagementsystem;
 import java.util.*;
-public class student {
+public class Student {
 	private String name, address, major;
 	
-	    public student(String n, String a, String m){
-	    	name=n;
-	    	address=a;
-	    	major=m;
+	    public Student(String name1, String address1, String major1){
+	    	name=name1;
+	    	address=address1;
+	    	major=major1;
 	    }
 	        //this.name = "satwik";
 	    	public void printDetails() {
@@ -15,17 +15,18 @@ public class student {
 	            System.out.println("Major: " + major);
 	    }
 	    
-
-public class master extends student{
+}
+ class Master extends Student{
 
     String degree;
 
-    public master(String n, String a, String m, String d) {
-        super(n,a, m);
-       degree=d;
+    public Master(String name1, String address1, String major1, String degree1) {
+        super(name1,address1, major1);
+       degree=degree1;
+       System.out.println("degree: " + degree1);
     }
 }
 
-}
+
 
 
