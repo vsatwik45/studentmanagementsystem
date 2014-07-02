@@ -1,8 +1,9 @@
 package studentmanagementsystem;
 import java.util.*;
 public class Student {
-	private String name, address, major;
-	
+	private String name;
+	private String address;
+	private String  major;
 	    public Student(String name1, String address1, String major1){
 	    	name=name1;
 	    	address=address1;
