@@ -38,17 +38,5 @@ public class Student
             System.out.println("Name = "+ name);
             System.out.println("Age = "+ age);
             System.out.println("address = "+ address);
-
-
-
         }
-
 }
-
-
-
-
-
-
-
-

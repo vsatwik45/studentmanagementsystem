@@ -63,10 +63,4 @@ package studentmanagementsystem;
 	{
 	    this.semester = semester;
 	}
-
-
-
-
 	}
-
-
