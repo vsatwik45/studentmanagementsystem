@@ -15,7 +15,7 @@ public static void main(String args[ ]) throws IOException
     String name, address, course;
     int age, studentNum, semester;
 
-    List<Student> studentsList = new ArrayList<Student>(); 
+    ArrayList<Student> studentsList = new ArrayList<Student>(); 
     for (int i = 0; i < 2; i++) 
     {
 
@@ -45,21 +45,10 @@ public static void main(String args[ ]) throws IOException
 
     Masters master = new Masters(name, age, address, studentNum, studentNum);
 
-    studentsList.add(master); // add student
+    studentsList.add(master); // adding student
     }
 
-    for (int j = 0; j < studentsList.size(); j++)
-    {
-
-        Masters mt = (Masters) studentsList.get(j);
-
-        System.out.println("student list: " + (j + 1)); 
-        System.out.println("");
-        System.out.println("Name: " + mt.getName() + "Age: "+mt.getAge() + "Address: " + mt.getAddress() + "Student Number: " + mt.getStudentNum() + "Semester: " + mt.getSemester()); // print out results entered by user
-        System.out.println("");
-    }
+    PrintUtil.printMasters(studentsList);
 
 }
-
 }
-

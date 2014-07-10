@@ -1,6 +1,13 @@
 package studentmanagementsystem;
 
+import java.util.ArrayList;
+
 public class Repository {
+	
+	/**
+	 * this arraylist will store the students
+	 */
+	private static ArrayList<Student>  stuLists = new ArrayList<Student>();
 
 	/**
 	 * 
