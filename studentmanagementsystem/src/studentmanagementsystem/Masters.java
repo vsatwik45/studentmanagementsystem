@@ -44,7 +44,7 @@ package studentmanagementsystem;
 	    this.address = address;
 	}
 
-	public int getStudentNum() // studentNum
+	public int getStudentNum() // studentNumber
 	{
 	return studentNum;
 	}

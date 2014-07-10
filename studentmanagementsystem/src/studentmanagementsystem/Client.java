@@ -45,7 +45,7 @@ public static void main(String args[ ]) throws IOException
 
     Masters master = new Masters(name, age, address, studentNum, studentNum);
 
-    studentsList.add(master); // add student
+    studentsList.add(master); // adding student
     }
 
     for (int j = 0; j < studentsList.size(); j++)

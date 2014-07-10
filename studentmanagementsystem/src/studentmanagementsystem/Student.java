@@ -32,7 +32,7 @@ public class Student
         }
 
 
-        public void display()
+        public void display()//printing
         {
 
             System.out.println("Name = "+ name);
