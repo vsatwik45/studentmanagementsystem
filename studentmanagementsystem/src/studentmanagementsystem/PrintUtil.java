@@ -5,7 +5,7 @@ import java.util.ArrayList;
 
 public class PrintUtil {
 
-	
+
 	/**
 	 * this method will print the list of students
 	 */
@@ -19,7 +19,8 @@ public class PrintUtil {
 	        System.out.println("Name: " + mt.getName() + "Age: "+mt.getAge() + "Address: " + mt.getAddress() + "Student Number: " + mt.getStudentNum() + "Semester: " + mt.getSemester()); // print out results entered by user
 	        System.out.println("");
 	    }
-		
-		
+
+
 	}
 }
+
