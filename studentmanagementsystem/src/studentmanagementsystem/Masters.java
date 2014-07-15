@@ -1,5 +1,4 @@
 package studentmanagementsystem;
-
 public class Masters extends Student {
 
 	int studentNum, semester;
