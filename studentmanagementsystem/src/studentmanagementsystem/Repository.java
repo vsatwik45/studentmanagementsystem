@@ -11,64 +11,73 @@ public class Repository  {
 
 	String name, address, course;
     int age, studentNum, semester;
-    
-	ArrayList<Student> studentsList = new ArrayList<Student>() ;
-	{
-    for (int i = 0; i < 2; i++) 
-    {
+	private static ArrayList<Student> studentsList = new ArrayList<Student>();
 
-    int studentNumber = (i + 1);
-  
-    Scanner in = new Scanner(System.in); 
-
-    System.out.println("Enter Student "+ studentNumber + " Name:"); 
-    name = in.nextLine();
-
-    System.out.println("Enter Student " + studentNumber + " Age:");
-    age = in.nextInt();
-
-    System.out.println("Enter Student " + studentNumber + " Address:");
-    address = in.nextLine();
-
-    System.out.println("Enter Student " + studentNumber + "  Number:"); 
-    studentNum = in.nextInt();
-
-    System.out.println("Enter Student " + studentNumber + " Semester:");
-    semester = in.nextInt();
-
-    System.out.println("Enter Student " + studentNumber + " Course:");
-    course = in.nextLine();
-
-
-    Masters master = new Masters(name, age, address, studentNum, studentNum);
-
-    studentsList.add(master); // adding student
-    }
-	
-	  
-	 
-	 public static Student getStudent(String byFirstName) {
-
-	}
-	
-	public static Student getStudent(int byAge) {
+	/**
+	 * below block is static fields, run once.
+	 * below also your default stage of repository
+	 */
+	static {
+		//set these students value.
+		Student stu1 = new Student();
+		Student stu2 = new Student();
+		Student stu3 = new Student();
+		Student stu4 = new Student();
+		Student stu5 = new Student();
+		Student stu6 = new Student();
 		
+		//give your master student, fields value.
+		Masters master1 = new Masters();
+		Masters master2 = new Masters();
+		Masters master3 = new Masters();
+		Masters master4 = new Masters();
+		Masters master5 = new Masters();
+		Masters master6 = new Masters();
+
+
+		studentsList.add(stu1);	
+		studentsList.add(stu2);	
+		studentsList.add(stu3);	
+		studentsList.add(stu4);	
+		studentsList.add(stu5);	
+		studentsList.add(stu6);
+		
+		studentsList.add(master1);
+		studentsList.add(master2);
+		studentsList.add(master3);
+		studentsList.add(master4);
+		studentsList.add(master5);
+		studentsList.add(master6);
+		
+		
+		
+			
+	}
+
+    public static Student getStudent(String byFirstName) {
+       
+	}
+
+	public static Student getStudent(int byAge) {
+
 
 	}
-	
+
 	public static Student getStudent(String byName, int byAge) {
 
 	}
-	
+
 	public static Student getStudent(String byName, String byAddress, int byAge) {
 
 	}
+ /*TODO: FINISH THESE IN FUTURE IMOLEMENTATION
+    * 
+    *  
+	public static void insertStudent(Student stu) {
 
-//	public static void insertStudent(Student stu) {
-//
-	//}
-   // public static void deleteStudent(Student stu) {
-//
-	//}
-}
+	}
+    public static void deleteStudent(Student stu) {
+
+	}*/
+
 }
