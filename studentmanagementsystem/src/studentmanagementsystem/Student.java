@@ -1,37 +1,59 @@
 package studentmanagementsystem;
 
-import java.util.*;
 
-public class Student {
 
-	String name;
-	int age;
-	String address;
 
-	// Default Constructor
+public class Student 
+{
+   
+       private String name;
+       private int age;
+        private String address;
 
-	Student() {
-		name = "";
-		age = 0;
-		address = "";
-	}
+        // Default Constructor
 
-	public Student(String name, int age, String address) {
-		this.name = name;
-		this.age = age;
-		this.address = address;
+        public Student()
+        {
+            setName("");
+            setAge(0);
+            setAddress("");
+        }
 
-	}
+     public   Student(String name, int age, String address)
+        {
+            this.setName(name);
+            this.setAge(age);
+            this.setAddress(address);
 
-	String getName() {
+        }
+
+	public String getName() {
 		return name;
 	}
 
-	public void display()// printing
-	{
-
-		System.out.println("Name = " + name);
-		System.out.println("Age = " + age);
-		System.out.println("address = " + address);
+	public void setName(String name) {
+		this.name = name;
 	}
+
+	public int getAge() {
+		return age;
+	}
+
+	public void setAge(int age) {
+		this.age = age;
+	}
+
+	public String getAddress() {
+		return address;
+	}
+
+	public void setAddress(String address) {
+		this.address = address;
+	}
+
+        public String toString()//printing
+        {
+
+            return "Name = "+getName()+"Age = "+getAge()+"address = "+getAddress();
+        }
 }

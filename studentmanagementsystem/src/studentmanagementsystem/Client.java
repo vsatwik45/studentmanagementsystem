@@ -19,9 +19,8 @@ public static void main(String args[ ])
 
     ArrayList<Student> studentsList = new ArrayList<Student>(); 
    
-    Repository.getStudent(int byAge) ;
+//    Repository.getStudent(int byAge) ;
     PrintUtil.printMasters(studentsList);
-
+    PrintUtil.printMasters(Repository.getStudent(25));
 }
 }
-
